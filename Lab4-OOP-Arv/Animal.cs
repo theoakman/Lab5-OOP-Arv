@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab4_OOP_Arv
+namespace Lab5_OOP_Arv
 {
     internal class Animal
     {
+
+
+        // Gives every property except for name a default value,
+        // so when making a new object based on the Animal class you always have to at least give the object a Name value
 
         public string Name { get; set; }
         public int Age { get; set; } = 5;
@@ -32,9 +36,9 @@ namespace Lab4_OOP_Arv
             Console.WriteLine("This text should not appear");
         }
 
-        public void DisplayInfo()
+        public virtual void DisplayInfo()
         {
-            Console.WriteLine($"Name: {Name}\nAge: {Age}\nThey are a {Gender}\nAre they hungry? {IsHungry}\nThey weigh {Weight} Kg\n\n");
+            Console.WriteLine($"Name: {Name}\nAge: {Age}\nThey are {Gender}\nAre they hungry? {IsHungry}\nThey weigh {Weight} Kg");
         }
 
     }

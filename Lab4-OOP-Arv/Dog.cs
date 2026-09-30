@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
 
-namespace Lab4_OOP_Arv
+namespace Lab5_OOP_Arv
 {
     internal class Dog : Animal
     {
-        public string Species { get; set; } = "Maltese";
+        public bool IsTrained { get; set; } = true;
         public Dog(string name) : base(name)
         {
 
@@ -21,6 +21,14 @@ namespace Lab4_OOP_Arv
         public void IsPlaying()
         {
             Console.WriteLine($"{Name} is playing");
+        }
+
+        // Add the IsTrained property to the DisplayInfo method 
+
+        public override void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine("Are they trained: " + IsTrained);
         }
 
     }

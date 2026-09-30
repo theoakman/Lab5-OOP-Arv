@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
 
-namespace Lab4_OOP_Arv
+namespace Lab5_OOP_Arv
 {
     internal class Bird : Animal
     {
@@ -23,5 +23,14 @@ namespace Lab4_OOP_Arv
         {
             Console.WriteLine($"{Name} is flying");
         }
+
+        // Add the FeatherColor property to the DisplayInfo method 
+
+        public override void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"They have {FeatherColor} feathers");
+        }
+
     }
 }

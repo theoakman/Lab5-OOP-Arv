@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab4_OOP_Arv
+namespace Lab5_OOP_Arv
 {
     internal class Cat : Animal
     {
@@ -22,6 +22,15 @@ namespace Lab4_OOP_Arv
         public void IsSleeping()
         {
             Console.WriteLine($"{Name} is sleeping");
+        }
+
+
+        // Add the LivesLeft property to the DisplayInfo method 
+
+        public override void DisplayInfo()
+        {
+            base.DisplayInfo();
+            Console.WriteLine($"They have {LivesLeft} lives left...");
         }
     }
 }
