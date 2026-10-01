@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab5_OOP_Arv
 {
-    internal class Cat : Animal
+    internal class Cat : DomesticatedAnimal
     {
 
         public int LivesLeft { get; set; } = 8;

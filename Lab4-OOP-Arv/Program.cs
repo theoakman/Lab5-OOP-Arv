@@ -4,16 +4,11 @@
     {
         static void Main(string[] args)
         {
-            // Next up:
-            // Ett av djuren du skapat ovan ska du sedan dela
-            // upp i två nya klasser som ärver från det djuret. 
 
-
-            // Making a cat object from the cat subclass and also asignng a new value over gender, overwriting the default "Unkown"
+            // Making a cat object from the cat subclass and also assigns a new value over gender, overwriting the default "Unkown"
 
             Cat cat = new Cat("Mio");
             cat.Gender = "Female";
-            
 
             // Making 3 dogs from 3 different subclasses, the specific breeds are also subclasses from the Dog subclass
             // I aslo try to overwrite the default values of the properties like Age and Gender
@@ -26,7 +21,6 @@
             dog2.Gender = "Male";
             dog2.Age = 4;
 
-
             Labrador dog3 = new Labrador("Bruno");
             dog3.Gender = "Male";
             dog3.Age = 9;
@@ -35,7 +29,6 @@
             // I aslo try to overwrite the default values of the weight property
             Bird bird = new Bird("Polly");
             bird.Weight = 0.2;
-
 
 
 
@@ -68,6 +61,14 @@
             bird.MakeSound();
             bird.IsFlying();
             bird.DisplayInfo();
+
+            Console.WriteLine();
+
+            Human human = new Human("Harry");
+            human.MakeSound();
+            human.FreeWill();
+            human.DisplayInfo();
+
 
         }
     }

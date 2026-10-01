@@ -5,7 +5,7 @@ using System.Xml.Linq;
 
 namespace Lab5_OOP_Arv
 {
-    internal class Dog : Animal
+    internal class Dog : DomesticatedAnimal
     {
         public bool IsTrained { get; set; } = true;
         public Dog(string name) : base(name)
